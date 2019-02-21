@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8s-Ax-CNv">
+                                <rect key="frame" x="69" y="328" width="57" height="30"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.54901960780000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ijj-j9-CYw"/>
+                                    <constraint firstAttribute="width" constant="57" id="eXJ-Zu-gxo"/>
+                                </constraints>
+                                <state key="normal" title="FB">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.58431372550000005" green="0.64705882349999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="FB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byA-Qc-9jg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXd-Us-4LO">
+                                <rect key="frame" x="159" y="328.5" width="57" height="30"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.54901960780000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="2ex-Ku-S06"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kby-mT-hLk"/>
+                                </constraints>
+                                <state key="normal" title="INS">
+                                    <color key="titleShadowColor" red="0.58431372550000005" green="0.64705882349999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Ins:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55a-OG-yfY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czv-Xv-zme">
+                                <rect key="frame" x="253" y="328" width="57" height="30"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.54901960780000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DCe-Kh-0DG"/>
+                                    <constraint firstAttribute="width" constant="57" id="Zx4-Ek-ANq"/>
+                                </constraints>
+                                <state key="normal" title="Mas">
+                                    <color key="titleColor" red="0.2784313725" green="0.40784313729999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.58431372550000005" green="0.64705882349999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Me:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYU-HL-0oB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MXd-Us-4LO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BdB-eJ-EOG"/>
+                            <constraint firstItem="czv-Xv-zme" firstAttribute="leading" secondItem="MXd-Us-4LO" secondAttribute="trailing" constant="37" id="HGc-ZZ-T2n"/>
+                            <constraint firstItem="MXd-Us-4LO" firstAttribute="leading" secondItem="P8s-Ax-CNv" secondAttribute="trailing" constant="33" id="Hq5-QU-QIV"/>
+                            <constraint firstItem="MXd-Us-4LO" firstAttribute="top" secondItem="P8s-Ax-CNv" secondAttribute="bottom" constant="-29.5" id="Jh1-nQ-NNZ"/>
+                            <constraint firstItem="MXd-Us-4LO" firstAttribute="top" secondItem="czv-Xv-zme" secondAttribute="bottom" constant="-29.5" id="VVM-M0-bwA"/>
+                            <constraint firstItem="MXd-Us-4LO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qnv-Xn-STQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
