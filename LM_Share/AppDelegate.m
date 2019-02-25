@@ -3,7 +3,7 @@
 //  LM_Share
 //
 //  Created by Tywin on 2019/2/21.
-//  Copyright © 2019 LionMobi. All rights reserved.
+//  Copyright © 2019. All rights reserved.
 //
 
 #import "AppDelegate.h"

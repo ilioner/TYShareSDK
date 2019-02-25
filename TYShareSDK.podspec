@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
                    This is a sharetools for iOS when you want to share image to Facebook，messenger，Instagram. 
+		   DESC
 
   s.homepage     = "https://github.com/ilioner/TYShareSDK"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
