@@ -383,6 +383,7 @@
 			baseConfigurationReference = 1C34FBB8F7A180DD537BCBC8 /* Pods-LM_Share.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23VLL6D73B;
 				INFOPLIST_FILE = LM_Share/Info.plist;
@@ -392,6 +393,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LionMobi.ALLTestPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -401,6 +403,7 @@
 			baseConfigurationReference = 2C4104CE77D9AE4B70B93D26 /* Pods-LM_Share.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23VLL6D73B;
 				INFOPLIST_FILE = LM_Share/Info.plist;
@@ -410,6 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LionMobi.ALLTestPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

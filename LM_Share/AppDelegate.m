@@ -7,11 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-
-#import <FBSDKShareKit/FBSDKShareKit.h>
+#import "TYShareSDK.h"
 
 @interface AppDelegate ()
 
@@ -22,10 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [FBSDKLoginButton class];
     
-    [[FBSDKApplicationDelegate sharedInstance] application:application
-                             didFinishLaunchingWithOptions:launchOptions];
+    [TYShareSDK configWith:application didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
@@ -33,9 +27,7 @@
             openURL:(NSURL *)url
             options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                          openURL:url
-                                                          options:options];
+    return [TYShareSDK application:application openURL:url options:options];
 }
 
 

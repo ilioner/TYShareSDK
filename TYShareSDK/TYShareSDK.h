@@ -37,6 +37,10 @@ typedef NS_ENUM(NSInteger, TYShareType) {
 
 -(void)share:(TYShareItem *)shareItem to:(TYShareType)type inViewController:(UIViewController *)viewController;
 +(BOOL)checkInstallWith:(TYShareType)type;
+
++(void)configWith:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
++(BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
+
 @end
 
 @protocol TYShareSDKDelegate <NSObject>

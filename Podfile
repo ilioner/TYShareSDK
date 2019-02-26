@@ -8,8 +8,6 @@ target 'LM_Share' do
   # Pods for LM_Share
   pod 'FacebookSDK'
   pod 'FBSDKCoreKit'  
-  pod 'FBSDKLoginKit'
   pod 'FBSDKShareKit'
-  pod 'FBSDKPlacesKit'
 
 end

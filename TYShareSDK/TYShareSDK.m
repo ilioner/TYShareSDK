@@ -7,6 +7,7 @@
 //
 
 #import "TYShareSDK.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
 #import "Instagram.h"
 @implementation TYShareItem
@@ -130,6 +131,19 @@
 {
 //    NSLog(@"sharer--->%@",sharer);
     [self.delegate sharerDidCancel:self.type];
+}
+
++ (void)configWith:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
+}
+
++ (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                          options:options];
 }
 
 @end
