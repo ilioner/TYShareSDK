@@ -118,18 +118,19 @@
 
 - (void)sharer:(id<FBSDKSharing>)sharer didCompleteWithResults:(NSDictionary *)results
 {
+    NSLog(@"didCompleteWithResults--->%@",sharer);
     [self.delegate share:self.type didCompleteWithResults:results];
 }
 
 - (void)sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error
 {
-//    NSLog(@"error--->%@",error);
+    NSLog(@"error--->%@",error);
     [self.delegate share:self.type didFailWithError:error];
 }
 
 - (void)sharerDidCancel:(id<FBSDKSharing>)sharer
 {
-//    NSLog(@"sharer--->%@",sharer);
+    NSLog(@"sharerDidCancel--->%@",sharer);
     [self.delegate sharerDidCancel:self.type];
 }
 

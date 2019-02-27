@@ -44,11 +44,42 @@
 
 3. 将 {your-app-id} 和 {your-app-name} 分别替换为 Facebook 应用面板上提供的应用编号和名称。
 
-安装
+##### 三、安装
 
 ```
-pod 'TYShareSDK', :git => 'https://github.com/ilioner/TYShareSDK.git'
+  pod 'FacebookSDK'
+  pod 'FBSDKCoreKit'  
+  pod 'FBSDKShareKit'
+  
 ```
+* 下载TYShareSDK中.h  .m 引入工程
+
+##### 四、使用
+
+````
+
+	#import "TYShareSDK.h"
+	
+	@interface AppDelegate ()
+	
+	@end
+	
+	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+	{
+	    
+	    [TYShareSDK configWith:application didFinishLaunchingWithOptions:launchOptions];
+	    return YES;
+	}
+	
+	- (BOOL)application:(UIApplication *)application
+	            openURL:(NSURL *)url
+	            options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+	{
+	    return [TYShareSDK application:application openURL:url options:options];
+	}
+	
+````
+
 
 #### Messenger
 
